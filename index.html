@@ -3,42 +3,400 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <!-- Link to CSS -->
-  <link rel="stylesheet" href="style.css">
+  <title>Surya Prakash Choragudi — Full Stack Developer</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Welcome to My Portfolio</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Final-year Computer Science student passionate about full-stack development and AI/ML.</p>
-  </section>
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li>Inventrack – Intelligent Sales Forecasting System</li>
-      <li>Real Estate Management System</li>
-      <li>Portfolio Website</li>
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-logo">surya.dev</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+
+    <div class="hero-content">
+      <div class="availability-badge">
+        <div class="badge-dot"></div>
+        Available for Developer roles · 2026 Graduate
+      </div>
+
+      <div class="hero-tag">Full Stack Developer</div>
+
+      <h1 class="hero-name">
+        Surya<br>
+        <span class="line2">Prakash</span><br>
+        <span class="accent-word">Choragudi</span>
+      </h1>
+
+      <p class="hero-desc">
+        Engineer who builds things that actually work —<br>
+        clean interfaces, reliable APIs, code teammates<br>
+        don't dread reading. MERN · Java · AI Integration.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">View My Work</a>
+        <a href="#contact" class="btn-ghost">Get In Touch</a>
+        <a href="https://github.com/SURYASDE" target="_blank" class="btn-ghost">GitHub ↗</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      Scroll to explore
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-num">8+</div>
+        <div class="stat-label">Months Experience</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">2</div>
+        <div class="stat-label">Internships</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">3+</div>
+        <div class="stat-label">Live Projects</div>
+      </div>
+    </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: suryasde2026@gmail.com</p>
-    <p>GitHub: <a href="https://github.com/SURYASDE">SURYASDE</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/suryasde2026">linkedin.com/in/suryasde2026</a></p>
+  <!-- MARQUEE -->
+  <div class="marquee-section">
+    <div class="marquee-track">
+      <span class="marquee-item">React.js <span class="marquee-sep">✦</span></span>
+      <span class="marquee-item">Node.js <span class="marquee-sep">✦</span></span>
+      <span class="marquee-item">MongoDB <span class="marquee-sep">✦</span></span>
+      <span class="marquee-item">Java <span class="marquee-sep">✦</span></span>
+      <span class="marquee-item">Express.js <span class="marquee-sep">✦</span></span>
+      <span class="marquee-item">REST APIs <span class="marquee-sep">✦</span></span>
+      <span class="marquee-item">AI Integration <span class="marquee-sep">✦</span></span>
+      <span class="marquee-item">MySQL <span class="marquee-sep">✦</span></span>
+      <span class="marquee-item">Git <span class="marquee-sep">✦</span></span>
+      <span class="marquee-item">Full Stack <span class="marquee-sep">✦</span></span>
+      <span class="marquee-item">React.js <span class="marquee-sep">✦</span></span>
+      <span class="marquee-item">Node.js <span class="marquee-sep">✦</span></span>
+      <span class="marquee-item">MongoDB <span class="marquee-sep">✦</span></span>
+      <span class="marquee-item">Java <span class="marquee-sep">✦</span></span>
+      <span class="marquee-item">Express.js <span class="marquee-sep">✦</span></span>
+      <span class="marquee-item">REST APIs <span class="marquee-sep">✦</span></span>
+      <span class="marquee-item">AI Integration <span class="marquee-sep">✦</span></span>
+      <span class="marquee-item">MySQL <span class="marquee-sep">✦</span></span>
+      <span class="marquee-item">Git <span class="marquee-sep">✦</span></span>
+      <span class="marquee-item">Full Stack <span class="marquee-sep">✦</span></span>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-header reveal">
+      <span class="section-num">01</span>
+      <h2 class="section-title">About Me</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>
+          I'm a <strong>2026 Computer Science graduate</strong> from VVIT Guntur with a genuine interest in building software that solves real problems. I don't just write code — I think about <span class="highlight">why it exists</span> and who it serves.
+        </p>
+        <p>
+          Over the last 8 months I've shipped real features in production — not university assignments. A <strong>React.js work permits module</strong> that reduced page load time by 15%, a <strong>Java ERP backend</strong> that fixed data integrity bugs affecting real users, and a <strong>MongoDB-backed IPO portal</strong> with production-level indexing strategies.
+        </p>
+        <p>
+          I learn by building. Every new technology — MongoDB schema design, AI API integration, JWT authentication — I've learned by building something real with it the same week I encountered it. That's how I go from zero to working knowledge fast.
+        </p>
+        <p>
+          Currently open to <strong>Full Stack and Developer roles</strong> in Hyderabad or remote. Looking for teams that trust engineers to think, not just execute tickets.
+        </p>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+        <div class="about-card reveal">
+          <div class="about-card-label">Education</div>
+          <div class="education-item">
+            <div class="edu-degree">B.Tech — Computer Science & Engineering</div>
+            <div class="edu-school">Vasireddy Venkatadri Institute of Technology, Guntur</div>
+            <div class="edu-year">Oct 2022 — Aug 2026</div>
+          </div>
+        </div>
+
+        <div class="about-card reveal">
+          <div class="about-card-label">Achievements</div>
+          <div class="achieve-item">
+            <div class="achieve-dot"></div>
+            <span>Global Rank <strong>124</strong> — Global Scholar Challenge powered by TOEFL</span>
+          </div>
+          <div class="achieve-item">
+            <div class="achieve-dot"></div>
+            <span>Rank <strong>2</strong> — C Debug Master Contest by TechGig</span>
+          </div>
+          <div class="achieve-item">
+            <div class="achieve-dot"></div>
+            <span>ACM Chapter — Organised workshop sessions on latest CS trends</span>
+          </div>
+          <div class="achieve-item">
+            <div class="achieve-dot"></div>
+            <span>College Fest — Volunteer coordinator creating engaging atmosphere</span>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <!-- Link to JS -->
+  <!-- SKILLS -->
+  <section id="skills" class="skills-section">
+    <div class="section-header reveal">
+      <span class="section-num">02</span>
+      <h2 class="section-title">Tech Stack</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-category reveal">
+        <div class="skill-cat-header">
+          <div class="skill-cat-icon" style="background:rgba(200,240,96,0.1);">⚛</div>
+          <div class="skill-cat-title">Frontend</div>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag highlight">React.js</span>
+          <span class="skill-tag highlight">JavaScript</span>
+          <span class="skill-tag">HTML5</span>
+          <span class="skill-tag">CSS3</span>
+          <span class="skill-tag">Responsive Design</span>
+          <span class="skill-tag">Performance Optimisation</span>
+        </div>
+      </div>
+
+      <div class="skill-category reveal">
+        <div class="skill-cat-header">
+          <div class="skill-cat-icon" style="background:rgba(96,208,200,0.1);">⚙</div>
+          <div class="skill-cat-title">Backend</div>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag highlight">Node.js</span>
+          <span class="skill-tag highlight">Express.js</span>
+          <span class="skill-tag highlight">Java</span>
+          <span class="skill-tag">REST APIs</span>
+          <span class="skill-tag">JWT Auth</span>
+          <span class="skill-tag">Spring Boot</span>
+        </div>
+      </div>
+
+      <div class="skill-category reveal">
+        <div class="skill-cat-header">
+          <div class="skill-cat-icon" style="background:rgba(240,128,96,0.1);">🗄</div>
+          <div class="skill-cat-title">Database</div>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag highlight">MongoDB</span>
+          <span class="skill-tag highlight">MySQL</span>
+          <span class="skill-tag">Schema Design</span>
+          <span class="skill-tag">Indexing</span>
+          <span class="skill-tag">SQL</span>
+          <span class="skill-tag">Data Modelling</span>
+        </div>
+      </div>
+
+      <div class="skill-category reveal">
+        <div class="skill-cat-header">
+          <div class="skill-cat-icon" style="background:rgba(200,240,96,0.1);">🤖</div>
+          <div class="skill-cat-title">AI & Tools</div>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag highlight">AI API Integration</span>
+          <span class="skill-tag highlight">OpenAI API</span>
+          <span class="skill-tag">Prompt Engineering</span>
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">AWS</span>
+          <span class="skill-tag">Linux/Unix</span>
+          <span class="skill-tag">VS Code</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="section-header reveal">
+      <span class="section-num">03</span>
+      <h2 class="section-title">Experience</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="exp-timeline">
+      <div class="exp-item">
+        <div class="exp-dot"></div>
+        <div class="exp-header">
+          <div class="exp-role">Software Engineer Intern</div>
+          <div class="exp-date">Jan 2025 — Present</div>
+        </div>
+        <div class="exp-company">
+          Wiiflex Software Solution Pvt. Ltd.
+          <span class="exp-type">Hyderabad · On-site</span>
+        </div>
+        <ul class="exp-bullets">
+          <li>Built a fully responsive <strong>Digital Work Permits module</strong> using React.js, improving cross-device usability for field workers across the platform.</li>
+          <li>Developed REST API endpoints for the <strong>Trade Books ERP application</strong> in Java, enabling new transaction history reporting features on the client side.</li>
+          <li>Optimised frontend assets — minified CSS/JS and compressed images — achieving a <strong>15% reduction in initial page load time</strong>.</li>
+          <li>Identified and resolved <strong>5+ critical backend bugs</strong> in the ERP inventory module, improving data integrity and preventing incorrect stock entries.</li>
+        </ul>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-dot"></div>
+        <div class="exp-header">
+          <div class="exp-role">Software Developer Intern</div>
+          <div class="exp-date">Apr 2025 — Jun 2025</div>
+        </div>
+        <div class="exp-company">
+          Bluestock Fintech™
+          <span class="exp-type">Remote</span>
+        </div>
+        <ul class="exp-bullets">
+          <li>Built a full-stack <strong>IPO data portal</strong> — developed 5+ React.js components and the complete Node.js RESTful API layer supporting them.</li>
+          <li>Architected <strong>MongoDB schemas</strong> for high-volume financial data — user profiles, IPO listings, and complex relational financial information.</li>
+          <li>Established strict schema validation rules and <strong>optimal indexing strategies</strong> on key collections, significantly boosting query performance and data integrity.</li>
+          <li>Participated in code reviews within an agile team using Git, ensuring code quality and adherence to best practices.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="projects-section">
+    <div class="section-header reveal">
+      <span class="section-num">04</span>
+      <h2 class="section-title">Projects</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="projects-grid">
+      <div class="project-card reveal">
+        <div class="project-card-bg" style="background: var(--accent);"></div>
+        <div class="project-card-num">Project 01</div>
+        <div class="project-card-title">Real Estate Management System</div>
+        <div class="project-card-desc">
+          Full-stack MERN application with JWT authentication for secure agent and client access. Features property listing with image uploads, advanced search with multi-parameter filtering, and a contact management system streamlining the property search process.
+        </div>
+        <div class="project-tags">
+          <span class="project-tag">React.js</span>
+          <span class="project-tag">Node.js</span>
+          <span class="project-tag">Express.js</span>
+          <span class="project-tag">MongoDB</span>
+          <span class="project-tag">JWT Auth</span>
+          <span class="project-tag">REST APIs</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/SURYASDE" target="_blank" class="project-link">↗ GitHub</a>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-card-bg" style="background: var(--teal);"></div>
+        <div class="project-card-num">Project 02</div>
+        <div class="project-card-title">Portfolio Website</div>
+        <div class="project-card-desc">
+          Fully responsive personal portfolio website built from scratch to showcase technical projects and professional skills. Managed with Git version control and deployed via GitHub Pages for public accessibility and professional online presence.
+        </div>
+        <div class="project-tags">
+          <span class="project-tag">HTML5</span>
+          <span class="project-tag">CSS3</span>
+          <span class="project-tag">JavaScript</span>
+          <span class="project-tag">Git</span>
+          <span class="project-tag">GitHub Pages</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/SURYASDE" target="_blank" class="project-link">↗ GitHub</a>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-card-bg" style="background: var(--coral);"></div>
+        <div class="project-card-num">Project 03</div>
+        <div class="project-card-title">AI Property Assistant</div>
+        <div class="project-card-desc">
+          OpenAI API integration built on top of the Real Estate platform. Users can ask natural language queries — "show me 2BHK flats under 50 lakhs" — and receive intelligent, context-aware property recommendations via a Node.js backend AI layer connected to MongoDB.
+        </div>
+        <div class="project-tags">
+          <span class="project-tag">OpenAI API</span>
+          <span class="project-tag">Node.js</span>
+          <span class="project-tag">React.js</span>
+          <span class="project-tag">MongoDB</span>
+          <span class="project-tag">AI Integration</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/SURYASDE" target="_blank" class="project-link">↗ GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact-section">
+    <div class="contact-orb"></div>
+
+    <div class="reveal">
+      <div class="contact-eyebrow">Open to opportunities</div>
+      <h2 class="contact-title">
+        Let's build<br><em>something real</em>
+      </h2>
+      <p class="contact-sub">
+        Looking for Full Stack and Developer roles in Hyderabad or remote. If you're building something interesting — let's talk.
+      </p>
+
+      <div class="contact-links">
+        <a href="mailto:suryasde2026@gmail.com" class="contact-card" style="cursor:pointer;">
+          <span class="contact-card-icon">✉</span>
+          suryasde2026@gmail.com
+        </a>
+        <a href="https://www.linkedin.com/in/suryasde2026" target="_blank" class="contact-card">
+          <span class="contact-card-icon">in</span>
+          linkedin.com/in/suryasde2026
+        </a>
+        <a href="https://github.com/SURYASDE" target="_blank" class="contact-card">
+          <span class="contact-card-icon">⌥</span>
+          github.com/SURYASDE
+        </a>
+        <a href="tel:7032549758" class="contact-card">
+          <span class="contact-card-icon">✆</span>
+          +91 703 254 9758
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <span>© 2026 Surya Prakash Choragudi</span>
+    <span>Built with intent · Hyderabad, India</span>
+    <span>VVIT · CSE · 2026</span>
+  </footer>
+
+  <!-- Script -->
   <script src="script.js"></script>
 </body>
 </html>
